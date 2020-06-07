@@ -22,7 +22,9 @@
         <!-- LeftsSide, larger column -->
         <div class="col-md-8">
           <h2>Latest Mars News</h2>
-          {{mars_news}}
+          <h3>{{data.latest_news.title}}</h3>
+          <p>{{data.latest_news.para}}</p>
+          
           <h2>Featured Mars Image</h2>
           <a href="{{ data.feat_image_url }}">
             <img src="{{ data.feat_image_url }}" alt="Mars Featured Image", class="img-fluid">
